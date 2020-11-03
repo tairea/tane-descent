@@ -55,15 +55,25 @@ class playGame extends Phaser.Scene {
     this.load.image("platform", "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fground_grass.png?v=1603601137907");
     this.load.image("background", "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fbg_layer1.png?v=1603601139028");
     // Tāne
-    this.load.spritesheet("taneJump", "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2F128-Jump-Sprite.png?v=1603601138273", {
+    this.load.spritesheet(
+      "taneJump", 
+      // "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2F128-Jump-Sprite.png?v=1603601138273", 
+      'https://cdn.glitch.com/5095b2d7-4d22-4866-a3b8-5f744eb40eb0%2FJump-Strips.png?v=1604391530898',
+      {
       frameWidth: 128,
       frameHeight: 128,
     });
-    this.load.spritesheet("taneRun", "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2F128-Run-Sprite.png?v=1603601139246", {
+    this.load.spritesheet("taneRun", 
+                          // "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2F128-Run-Sprite.png?v=1603601139246", 
+                          'https://cdn.glitch.com/5095b2d7-4d22-4866-a3b8-5f744eb40eb0%2FRun-Strips.png?v=1604391531042',
+                          {
       frameWidth: 128,
       frameHeight: 128,
     });
-    this.load.spritesheet("taneIdle", "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2F128-Idle-Sprite.png?v=1603601137744", {
+    this.load.spritesheet("taneIdle", 
+                          // "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2F128-Idle-Sprite.png?v=1603601137744", 
+                          'https://cdn.glitch.com/5095b2d7-4d22-4866-a3b8-5f744eb40eb0%2FIdle-Strips.png?v=1604391874940',
+    {
       frameWidth: 128,
       frameHeight: 128,
     });
