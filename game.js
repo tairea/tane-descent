@@ -64,7 +64,7 @@ class playGame extends Phaser.Scene {
     this.load.image("background", "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fbg_layer1.png?v=1603601139028");
     this.load.image(
       "kowhaiwhai",
-      "public/assets/kowhaiwhai.png"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fkowhaiwhai.png?v=1609560527158"
     );
     this.load.atlasXML(
       "enemies",
@@ -96,67 +96,67 @@ class playGame extends Phaser.Scene {
     this.load.audio(
       "jump",
       // "https://cdn.glitch.com/e46a9959-9af7-4acd-a785-ff3bc76f44d0%2Fquake-jump.ogg?v=1603606002409"
-      "public/assets/jump.ogg"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fjump.ogg?v=1609560522050"
     );
     this.load.audio(
       "die",
       // "https://cdn.glitch.com/e46a9959-9af7-4acd-a785-ff3bc76f44d0%2Fquake-die.ogg?v=1603606001864",
-      "public/assets/die.ogg"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fdie.ogg?v=1609560520872"
     );
     this.load.audio(
       "hurt",
       // "https://cdn.glitch.com/e46a9959-9af7-4acd-a785-ff3bc76f44d0%2Fquake-hurt.ogg?v=1603606002105"
-      "public/assets/bad.ogg"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fbad.ogg?v=1609560520828"
     );
     this.load.audio(
       "good",
-      "public/assets/good.ogg"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fgood.ogg?v=1609560521641"
     );
     this.load.audio(
       "music",
-      "public/assets/music.mp3"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fmusic.mp3?v=1609560524998"
     );
     this.load.audio(
       "end-music",
-      "public/assets/gameover-music.mp3"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fgameover-music.mp3?v=1609560521933"
     );
     this.load.audio(
       "cheer",
-      "public/assets/cheer.wav"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fcheer.wav?v=1609560521914"
     );
 
     // token types
     this.load.image(
       "bronze-token-type",
-      "public/assets/tane-bronze-token.png"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Ftane-bronze-token.png?v=1609560526009"
     );
     this.load.image(
       "silver-token-type",
-      "public/assets/tane-silver-token.png"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Ftane-silver-token.png?v=1609560526786"
     );
     this.load.image(
       "gold-token-type",
-      "public/assets/tane-gold-token.png"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Ftane-gold-token.png?v=1609560526283"
     );
 
 
     this.load.image(
       "bronze-token-overlay",
-      "public/assets/bronze-overlay.png"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fbronze-overlay.png?v=1609560523486"
     );
     this.load.image(
       "silver-token-overlay",
-      "public/assets/silver-overlay.png"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fsilver-overlay.png?v=1609560525316"
     );
     this.load.image(
       "gold-token-overlay",
-      "public/assets/gold-overlay.png"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fgold-overlay.png?v=1609560524398"
     );
 
 
     this.load.image(
       "bronze-token-mask",
-      "public/assets/bronze-mask.png"
+      "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fbronze-mask.png?v=1609560523069"
     );
     this.load.image(
       "silver-token-mask",
@@ -165,13 +165,6 @@ class playGame extends Phaser.Scene {
     this.load.image(
       "gold-token-mask",
       "https://cdn.glitch.com/f605c78d-cefb-481c-bb78-d09a6bffa1e6%2Fgold-mask.png?v=1609560523932"
-    );
-
-    this.load.scenePlugin(
-      "rexuiplugin",
-      "https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexuiplugin.min.js",
-      "rexUI",
-      "rexUI"
     );
 
     // coins
