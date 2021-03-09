@@ -223,6 +223,9 @@ class playGame extends Phaser.Scene {
     this.music = this.sound.add("music", musicConfig);
     this.music.play();
 
+    // ========= INIT KEYBOARD ===========
+    this.cursors = this.input.keyboard.createCursorKeys();
+
     // ========= LIVES TEXT UI ===========
     WebFont.load({
       google: {
@@ -513,10 +516,14 @@ class playGame extends Phaser.Scene {
     // ========= CONTROLS ===========
     // input listener to move the hero
     this.input.on("pointerdown", this.moveHero, this);
-
+    // input listener on keyboard to move the hero
+    this.input.keyboard.on("keydown", this.moveHero, this)
+    
     // input listener to stop the hero
     this.input.on("pointerup", this.stopHero, this);
-
+    // input listener on keyboard to stop the hero
+    this.input.keyboard.on("keyup", this.stopHero, this);
+    
     // we are waiting for player first move
     this.firstMove = true;
 
@@ -595,6 +602,13 @@ class playGame extends Phaser.Scene {
     this.hero.setVelocityX(
       gameOptions.heroSpeed * (e.x > game.config.width / 2 ? 1 : -1)
     );
+
+    // keyboard controller
+    if (this.cursors.left.isDown) {
+      this.hero.setVelocityX(-300);
+    } else if (this.cursors.right.isDown) {
+      this.hero.setVelocityX(300);
+    }
 
     // is it the first move?
     if (this.firstMove) {
@@ -772,7 +786,6 @@ class playGame extends Phaser.Scene {
         console.log("tokens length:", this.tokenGroup.getChildren().length)
       }
     });
-
 
     // loop through all platforms
     this.platformGroup.getChildren().forEach((platform) => {
