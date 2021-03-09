@@ -1,8 +1,7 @@
-/* CSS files add styling rules to your content */
-
 body {
   font-family: helvetica, arial, sans-serif;
   background: #533d8e;
+  margin: 0;
 }
 
 h1 {
